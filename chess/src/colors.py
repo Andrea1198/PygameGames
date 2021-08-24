@@ -1,0 +1,5 @@
+BLACK =         (  0,  0,  0)
+WHITE =         (255,255,255)
+LIGHT_BROWN =   (154,120, 79)
+DARK_BROWN  =   (128, 71, 28)
+LIGHT_BLUE  =   ()
