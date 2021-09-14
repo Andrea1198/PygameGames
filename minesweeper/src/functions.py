@@ -114,8 +114,8 @@ def setting():
     settings_img    = pygame.image.load(imgDir+'settings_minesweeper.jpg')
     settings_img    = pygame.transform.scale(settings_img, (WIDTH, HEIGHT))
     #                 x   y   w   h  min  max  n
-    n1_bar      = Bar(175, 60,611,32, 10, 100,0)
-    n2_bar      = Bar(175,103,611,32, 10, 100,1)
+    n1_bar      = Bar(175, 60,611,32, 10, 40,0)
+    n2_bar      = Bar(175,103,611,32, 10, 40,1)
     mines_bar   = Bar(175,146,611,32,  0, 100,2)
     back        = Cell(438,246,83,99,         3)
     bars        = [n1_bar, n2_bar, mines_bar]
@@ -128,7 +128,6 @@ def setting():
         pygame.font.init()
         myfont = pygame.font.SysFont('Times New Roman', 20)
         (x_mouse, y_mouse) = pygame.mouse.get_pos()
-        print(x_mouse, y_mouse)
         blank   = pygame.Surface((55,33))
         blank.fill((255,255,255))
         textsurface = myfont.render(str(n1_bar.val), True, (0, 0, 0))
